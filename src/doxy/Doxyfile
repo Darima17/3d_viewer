@@ -1,0 +1,19 @@
+# Устанавливаем содержимое для главной страницы
+USE_MDFILE_AS_MAINPAGE = doxy/index.md
+# Устанавливаем каталоги для поиска исходных файлов
+INPUT                  =models/edges.cc models/edges.h models/faces.cc models/faces.h models/figure.cc models/figure.h models/point.cc models/point.h models/points.h models/points.cc viewer/mainwindow.h viewer/glViewer.h viewer/momento.h viewer/mainwindow.cc viewer/glViewer.cc viewer/momento.cc
+# Устанавливаем каталог для сохранения сгенерированной документации
+OUTPUT_DIRECTORY       = docs
+
+# Устанавливаем некоторые заголовки страницы документации
+PROJECT_NAME           = "My Project"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "A brief description of my project."
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+
+# Генерируем удобочитаемый HTML формат
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+
